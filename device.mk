@@ -293,7 +293,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DialerResXiaomi \
     FrameworksResXiaomi \
-    LineageResXiaomi \
     SettingsProviderResXiaomi \
     SettingsResXiaomi
 
