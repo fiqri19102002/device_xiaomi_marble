@@ -1235,7 +1235,7 @@ vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=-vendor|19430d592c7f8
 vendor/lib64/libdpmqmihal.so|14bd1091ff1fdd0a696c0098c3c989117f5ef01e
 vendor/lib64/vendor.libdpmctmgr.so|ff655dc161c336199a676ad9d7f5f8bb33beea72
 vendor/lib64/vendor.libdpmfdmgr.so|990c25e3c7d739e9237690ff15be8bc4d685ff52
-vendor/lib64/vendor.libdpmframework.so|5e54873c105920a46340d9bd02a9655b5bc2a356
+vendor/lib64/vendor.libdpmframework.so|5e54873c105920a46340d9bd02a9655b5bc2a356|498bdaa744e14b582d988cd98009f77041f3db90
 vendor/lib64/vendor.libdpmtcm.so|f298dd6c2fc4250d2de054672b8c56a631e4ea01
 vendor/lib64/vendor.libmwqemiptablemgr.so|d41a64ec933cbf3da42e7c98f0ddef134599d583
 vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=-vendor|1d690710fc30aef32e343734f7f72b6a16913389
