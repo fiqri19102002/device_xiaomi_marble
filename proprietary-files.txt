@@ -1414,27 +1414,27 @@ vendor/lib64/libqtikeymaster4.so|7a9182465290147772068060ed6a4ae6048ec00e
 vendor/lib64/libspcom.so|69cd22b8a90d592656d060a984851c0d621a2ba0
 
 # Keymint - from diting V816.0.7.0.ULFMIXM
-vendor/bin/hw/android.hardware.security.keymint-service-qti|b5327078ccf2bb640fd1a7ade43c23df621917ef
+vendor/bin/hw/android.hardware.security.keymint-service-qti|242bba583783a215b372ec14983fbe76c2d45f51|b5327078ccf2bb640fd1a7ade43c23df621917ef
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc|28d39a691127b567b7745b1ae6da87b7a282325e
 vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permissions/android.hardware.hardware_keystore.km100.xml|672d9b78a504fbd1eef56853e710e7986a3cd2f8
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml|f78fe6f4b5b01884b2425950dd8fa23e185ab309
-vendor/lib64/libqtikeymint.so|d6f496b9e99689f6066598ff07ff81e1b508dc4c
+vendor/lib64/libqtikeymint.so|28514cdad1935be971f8dfb0fc6444d19ee26a69|d6f496b9e99689f6066598ff07ff81e1b508dc4c
 
 # Media - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|a3a103902ba4d0d2a41f7e6d61798cf846cbcc0d
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|a395d05f3004f2a5150dfd4510eed0c50d671974
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|542d2ae2a92ee21dbb63716ff49392e8e6e433f4
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc|51841b9c67dd26b7fe82e24109f1e0a663a3e04a
-vendor/etc/media_codecs_c2_audio.xml|96a01590c621f86a627cccbb4074c17700a31734
+vendor/etc/media_codecs_c2_audio.xml|ff7f8b08f84b818577e63e25b36df668f403f001|96a01590c621f86a627cccbb4074c17700a31734
 vendor/etc/media_codecs_performance_ukee.xml|995796ff5026ad54e9591e9c88b99b95d2391625
-vendor/etc/media_codecs_ukee.xml|d9673afaa68015f0078d61df70c06b6b218f9b64
+vendor/etc/media_codecs_ukee.xml|2a98209e4853ae1c27a56f7d864e4ab56df95787|d9673afaa68015f0078d61df70c06b6b218f9b64
 vendor/etc/media_profiles_ukee.xml|19060660b7111f6cb1b07cd390c894dc9610fa57
 vendor/etc/media_ukee/video_system_specs.json|1a39bd79cec43df61a85f6edbaee322dc067970c
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy|e708b49cbf3879a0b4ccd8d941a46c68b9408d82
 vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy|bb5454a7265bb9a17349c7e254412916b774ea7a
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy|1bd2621778d771207bdb1ad5ae902966fe3de683
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml|dfaad7360e85bf2d1a8293bb878a4f0edc70b1db|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml|7801d5fb9104883e33e874011caa25c28b7bec71
 vendor/lib64/libAlacSwDec.so|be266dfd610b68ed140bfef8e559c7d9dcc2e2a6
 vendor/lib64/libApeSwDec.so|1bd5b693b0b21e9f24b4a8bb23596f4a7308b23f
@@ -2047,7 +2047,7 @@ system_ext/lib64/libwfdmmsink.so|8150b750357b606475521b491f78d566673f9888
 system_ext/lib64/libwfdmmsrc_system.so|549dc8ea93308bf2a5e3c32eaca3677e436ac62f
 system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|a51ea34b7287a186974cc4535a821c2183d030d4
 system_ext/lib64/libwfdrtsp.so|8181e44d7c1f722218fabd8fe3bf788454a3f586
-system_ext/lib64/libwfdservice.so|4b6665307b15d17347bbff0073c0d428f021bdb1
+system_ext/lib64/libwfdservice.so|a993e338de3e06733186f69f91486520599a727c|4b6665307b15d17347bbff0073c0d428f021bdb1
 system_ext/lib64/libwfdsinksm.so|c4d68ecbe0accd24296c18444e5a82b6a24be8d8
 system_ext/lib64/libwfduibcinterface.so|dca32fe063bdba7ce3b131b16cf112b793ae03ad
 system_ext/lib64/libwfduibcsink.so|63ea93b1a6aec75a294baf50007270807a819e21
