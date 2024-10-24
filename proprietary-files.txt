@@ -1672,6 +1672,8 @@ vendor/etc/telephony_packages.xml|9828995acd7e07728d37c9078714666eb1bc8357
 vendor/etc/vintf/manifest/dataconnection-saidl.xml|898425b8957b513c4306218e570e8b732240283c
 vendor/etc/vintf/manifest/qtiradio-saidl.xml|dc12fb9337aa272fc1e2c5966b4923b5934ff532
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.ims.xml|347dec9345eb48c476c2398a0339898866119181
+vendor/etc/xiaomi_ecc_list.xml|945f194dd2b99de2ca8c6b4c3da5c4913a6aa2f9
+vendor/etc/xiaomi_ecc_list_preference.xml|b2b6cb7017dfd5be6ff03e324c77153f7babc037
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so|af5f0afd9a72e69eefdc7ec43bbc1dff4c42cfff
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|6094df6b9fbcf6ef381d1369dd247d4c308073db
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so|6888b8294511810624d3344300fea3831715dcef
