@@ -1235,7 +1235,7 @@ vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|19430d592c7f8
 vendor/lib64/libdpmqmihal.so|14bd1091ff1fdd0a696c0098c3c989117f5ef01e
 vendor/lib64/vendor.libdpmctmgr.so|ff655dc161c336199a676ad9d7f5f8bb33beea72
 vendor/lib64/vendor.libdpmfdmgr.so|990c25e3c7d739e9237690ff15be8bc4d685ff52
-vendor/lib64/vendor.libdpmframework.so|5e54873c105920a46340d9bd02a9655b5bc2a356|498bdaa744e14b582d988cd98009f77041f3db90
+vendor/lib64/vendor.libdpmframework.so|5e54873c105920a46340d9bd02a9655b5bc2a356|b354e7f3d3b7517e3bf7f9b9dd95dcc977a5249d
 vendor/lib64/vendor.libdpmtcm.so|f298dd6c2fc4250d2de054672b8c56a631e4ea01
 vendor/lib64/vendor.libmwqemiptablemgr.so|d41a64ec933cbf3da42e7c98f0ddef134599d583
 vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=_vendor|1d690710fc30aef32e343734f7f72b6a16913389
@@ -1414,11 +1414,11 @@ vendor/lib64/libqtikeymaster4.so|7a9182465290147772068060ed6a4ae6048ec00e
 vendor/lib64/libspcom.so|69cd22b8a90d592656d060a984851c0d621a2ba0
 
 # Keymint - from diting V816.0.8.0.ULFMIXM
-vendor/bin/hw/android.hardware.security.keymint-service-qti|242bba583783a215b372ec14983fbe76c2d45f51|50a34d83fe35a68339f060f6c1eb00a2c5059d9c
+vendor/bin/hw/android.hardware.security.keymint-service-qti|242bba583783a215b372ec14983fbe76c2d45f51|e9acddb95ab3f86263d045ce211d7726a09bbfd6
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc|28d39a691127b567b7745b1ae6da87b7a282325e
 vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permissions/android.hardware.hardware_keystore.km100.xml|672d9b78a504fbd1eef56853e710e7986a3cd2f8
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml|f78fe6f4b5b01884b2425950dd8fa23e185ab309
-vendor/lib64/libqtikeymint.so|28514cdad1935be971f8dfb0fc6444d19ee26a69|d9889f9d15e535d0bf8c3cc628b5551378e422c7
+vendor/lib64/libqtikeymint.so|28514cdad1935be971f8dfb0fc6444d19ee26a69|3916f5b4f48709a7a0b026c050a4c858fd62952b
 
 # Media - from diting V816.0.8.0.ULFMIXM
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|a3a103902ba4d0d2a41f7e6d61798cf846cbcc0d
@@ -1536,10 +1536,10 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so|9663f4512a1e33956a
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so|db1ea124c0f42fcc1a814d69308d4f9522012e1b
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so|15a47e8d6f3746e3cb3baa91577f206a1089edd5
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so|ffccfde321f48e390c5af8d546e1c7cdf23f9152
-vendor/bin/qcc-trd|146a8d4ba56aebee8056f988159358943dc148c9|a92ef8c6452a8a7c6909b8f185ed959282349bb0
+vendor/bin/qcc-trd|146a8d4ba56aebee8056f988159358943dc148c9|698da506a789666d3e0fde9bbd7f8af90c246844
 vendor/etc/init/init.qdmastats.rc|d7ddb87faaedd900f1756064fe756d50efed7ca9
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so|459d506b20124520f5d650a7b30c9a490514a878
-vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so;FIX_SONAME|e0363df07498ac7f3beb9e6f017d79e2bbc53c9c|e6363ed5a2a8d2648ab7f9d999491d2ca54d9a18
+vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so;FIX_SONAME|e0363df07498ac7f3beb9e6f017d79e2bbc53c9c|deef616f1a0fb091dbd553d807c097a7989f49fd
 vendor/lib64/libqcc_file_agent.so|2062da8684a791c3c8afe57f8be3d2b010337a8a
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor|ef866bab2186db1b2c09477e36fef20945fa671e
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=_vendor|0677ebfe099cdaa6c3776d0bd5318044a4220918
@@ -2046,8 +2046,8 @@ system_ext/lib64/libwfdconfigutils.so|ce60fa01bfb684bb8d993f57edb7854c86fa6003
 system_ext/lib64/libwfddisplayconfig.so|5fd7bf7abaedfe890442f88183c49755b25c39aa
 system_ext/lib64/libwfdmminterface.so|3f16acefbe87741a5841c1c70cf74ff917299c4c
 system_ext/lib64/libwfdmmsink.so|8150b750357b606475521b491f78d566673f9888
-system_ext/lib64/libwfdmmsrc_system.so|549dc8ea93308bf2a5e3c32eaca3677e436ac62f|e6e6000eb4ef822374f2c1053a54fc94bc3abf20
-system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|fd5284de5f87e838e751eb5530a4b4e26c3f3de1|8bc70096b6fe8a43ead90d1c9c1eb9817a817197
+system_ext/lib64/libwfdmmsrc_system.so|549dc8ea93308bf2a5e3c32eaca3677e436ac62f|12efaad1a3614fe13969ebf4e15d1b405b11a0a5
+system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|fd5284de5f87e838e751eb5530a4b4e26c3f3de1|db8ef3e56131e9c3594878ac04f337ba2fbcc599
 system_ext/lib64/libwfdrtsp.so|8181e44d7c1f722218fabd8fe3bf788454a3f586
 system_ext/lib64/libwfdservice.so|a993e338de3e06733186f69f91486520599a727c|33a796a4f7fff7c16d6c7d0ed66f85866d85c7ce
 system_ext/lib64/libwfdsinksm.so|c4d68ecbe0accd24296c18444e5a82b6a24be8d8
