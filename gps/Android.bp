@@ -16,9 +16,11 @@ soong_config_module_type {
     config_namespace: "qtilocation",
     bool_variables: [
         "feature_nhz",
+        "supports_wearables",
     ],
     properties: [
         "cflags",
+        "shared_libs",
     ],
 }
 
@@ -29,22 +31,11 @@ qtilocation_cc_defaults {
         feature_nhz: {
             cflags: ["-DFEATURE_NHZ_ENABLED"],
         },
+        supports_wearables: {
+            conditions_default: {
+                shared_libs: ["libqti_vndfwk_detect_vendor"],
+            },
+            shared_libs: ["libqti_vndfwk_detect"],
+        },
     },
-}
-
-
-/* Activate the following for debug purposes only,
-   comment out for production */
-GNSS_SANITIZE_DIAG = {
-/*
-    diag: {
-        cfi: true,
-        misc_undefined: [
-            "bounds",
-            "null",
-            "unreachable",
-            "integer",
-        ],
-    },
-*/
 }
