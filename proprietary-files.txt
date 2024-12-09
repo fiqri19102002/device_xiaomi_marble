@@ -1883,7 +1883,6 @@ vendor/etc/sensors/sns_reg_config
 
 # Sensors ultrasound - from diting V816.0.8.0.ULFMIXM
 vendor/lib64/libultrasound_notify.so|66336a6cdb2e86bdf968638dec56a9621c76085e
-vendor/lib64/sensors.ultrasoundproximity.so|93d5b08a5086adad9f4b820b603a3220ba091aff
 
 # Sensors - SSC
 vendor/lib64/libssccalapi@2.0.so
