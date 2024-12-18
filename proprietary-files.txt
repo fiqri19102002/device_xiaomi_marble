@@ -4,7 +4,6 @@
 # audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
 # libar-pal depends on libagmclient, which is a gnu makefile target
 # libawcal depends on libagmmixer, which is a gnu makefile target
-# libTrueSight, libalLDC, libalhLDC, libmorpho_ubwc depend on libnativewindow leading to unresolved symbols
 # qms, libcne, libmasc, lowi-server depend on libwpa_client, which is a gnu makefile target
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
 
@@ -784,12 +783,12 @@ vendor/lib64/libMiMotion.so
 vendor/lib64/libQnnHtpAltPrepV69Stub.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSnpeHtpV69Stub.so
-vendor/lib64/libTrueSight.so;DISABLE_CHECKELF
+vendor/lib64/libTrueSight.so
 vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so;DISABLE_CHECKELF
-vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalLDC.so
+vendor/lib64/libalhLDC.so
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
@@ -873,7 +872,7 @@ vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
-vendor/lib64/libmorpho_ubwc.so;DISABLE_CHECKELF
+vendor/lib64/libmorpho_ubwc.so
 vendor/lib64/libmorpho_video_stabilizer.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libomp.so
