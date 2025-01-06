@@ -17,8 +17,8 @@ PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 23049PCD8G
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="marble_global-user 14 UKQ1.230804.001 V816.0.12.0.UMRMIXM release-keys" \
-    BuildFingerprint=POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.12.0.UMRMIXM:user/release-keys \
+    BuildDesc="marble_global-user 14 UKQ1.230804.001 V816.0.14.0.UMRMIXM release-keys" \
+    BuildFingerprint=POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.14.0.UMRMIXM:user/release-keys \
     DeviceName=marble \
     DeviceProduct=marble_global
 
