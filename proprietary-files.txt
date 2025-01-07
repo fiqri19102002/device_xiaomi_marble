@@ -1969,6 +1969,7 @@ vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
 vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
 
 # VM mem - from diting V816.0.9.0.ULFMIXM
+vendor/lib/libvmmem.so|9eb500e56890ab2cca97371450e2a7775dd80c27
 vendor/lib64/libvmmem.so|cd1b80963d107b0a9ddfb0a08de266621b5a7154
 
 # VM mgr - from diting V816.0.9.0.ULFMIXM
