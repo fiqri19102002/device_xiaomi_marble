@@ -240,14 +240,11 @@ DEVICE_MANIFEST_SKUS := ukee
 DEVICE_MANIFEST_UKEE_FILES := \
     $(DEVICE_PATH)/vintf/manifest_ukee.xml \
     $(DEVICE_PATH)/vintf/manifest_xiaomi.xml \
-    $(if $(TARGET_NFC_SUPPORTED_SKUS),$(DEVICE_PATH)/vintf/manifest_no_nfc.xml,) \
+    $(DEVICE_PATH)/vintf/manifest_no_nfc.xml \
     $(if $(TARGET_PROVIDES_AUDIO_HAL),hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml,)
 
-ifneq ($(TARGET_NFC_SUPPORTED_SKUS),)
-ODM_MANIFEST_SKUS += $(TARGET_NFC_SUPPORTED_SKUS)
-$(foreach nfc_sku, $(call to-upper, $(TARGET_NFC_SUPPORTED_SKUS)), \
-    $(eval ODM_MANIFEST_$(nfc_sku)_FILES += $(DEVICE_PATH)/vintf/manifest_nfc.xml))
-endif
+ODM_MANIFEST_SKUS += marble
+ODM_MANIFEST_MARBLE_FILES += $(DEVICE_PATH)/vintf/manifest_nfc.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
