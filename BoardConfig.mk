@@ -57,7 +57,7 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 
-TARGET_PROVIDES_AUDIO_HAL ?= true
+TARGET_PROVIDES_AUDIO_HAL := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
 # Boot control
@@ -237,7 +237,7 @@ DEVICE_MANIFEST_UKEE_FILES := \
     $(DEVICE_PATH)/vintf/manifest_ukee.xml \
     $(DEVICE_PATH)/vintf/manifest_xiaomi.xml \
     $(DEVICE_PATH)/vintf/manifest_no_nfc.xml \
-    $(if $(TARGET_PROVIDES_AUDIO_HAL),hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml,)
+    hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml
 
 ODM_MANIFEST_SKUS += marble
 ODM_MANIFEST_MARBLE_FILES += $(DEVICE_PATH)/vintf/manifest_nfc.xml
