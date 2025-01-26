@@ -236,14 +236,12 @@ $(call soong_config_set, marbleSensorVars, extensionLibs, $(TARGET_SENSOR_NOTIFI
 # VINTF
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
-DEVICE_MANIFEST_SKUS := taro diwali cape ukee
-$(foreach sku, $(call to-upper, $(DEVICE_MANIFEST_SKUS)), \
-    $(eval DEVICE_MANIFEST_$(sku)_FILES := \
-        $(DEVICE_PATH)/vintf/manifest.xml \
-        $(DEVICE_PATH)/vintf/manifest_xiaomi.xml \
-        $(if $(TARGET_NFC_SUPPORTED_SKUS),$(DEVICE_PATH)/vintf/manifest_no_nfc.xml,) \
-        $(if $(TARGET_PROVIDES_AUDIO_HAL),hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml,) \
-    ))
+DEVICE_MANIFEST_SKUS := ukee
+DEVICE_MANIFEST_UKEE_FILES := \
+    $(DEVICE_PATH)/vintf/manifest_ukee.xml \
+    $(DEVICE_PATH)/vintf/manifest_xiaomi.xml \
+    $(if $(TARGET_NFC_SUPPORTED_SKUS),$(DEVICE_PATH)/vintf/manifest_no_nfc.xml,) \
+    $(if $(TARGET_PROVIDES_AUDIO_HAL),hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml,)
 
 ifneq ($(TARGET_NFC_SUPPORTED_SKUS),)
 ODM_MANIFEST_SKUS += $(TARGET_NFC_SUPPORTED_SKUS)
