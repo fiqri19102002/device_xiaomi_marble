@@ -153,8 +153,7 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/display-drivers/msm \
 	qcom/opensource/eva-kernel \
 	qcom/opensource/video-driver \
-	qcom/opensource/wlan/qcacld-3.0/.qca6490 \
-	qcom/opensource/wlan/qcacld-3.0/.qca6750
+	qcom/opensource/wlan/qcacld-3.0/.qca6490
 
 # Light
 TARGET_SENSOR_NOTIFIER_EXT := //device/xiaomi/marble:libsensor-notifier-ext-light
