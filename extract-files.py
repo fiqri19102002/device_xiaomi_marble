@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import extract_utils.tools
+extract_utils.tools.DEFAULT_PATCHELF_VERSION = '0_18'
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -26,6 +29,7 @@ namespace_imports = [
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
+    'vendor/xiaomi/sm8450-common',
 ]
 
 
@@ -48,9 +52,12 @@ lib_fixups: lib_fixups_user_type = {
     ): lib_fixup_vendor_suffix,
     (
         'libagm',
+        'libagmclient',
+        'libagmmixer',
         'libar-pal',
         'libpalclient',
         'libwpa_client',
+        'vendor.qti.hardware.pal@1.0-impl',
     ): lib_fixup_remove,
 }
 
@@ -97,6 +104,13 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/etc/media_codecs_ukee.xml',
     ): blob_fixup()
         .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
+    (
+        'vendor/etc/camera/marble_enhance_motiontuning.xml',
+        'vendor/etc/camera/marble_motiontuning.xml',
+    ): blob_fixup().regex_replace('xml=version', 'xml version'),
+    'vendor/etc/camera/pureView_parameter.xml': blob_fixup().regex_replace(
+        r'=([0-9]+)>', r'="\1">'
+    ),
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
@@ -105,17 +119,33 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('gettid: 1'),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.+dolby.+\n', ''),
+    'vendor/lib64/libcamximageformatutils.so': blob_fixup().replace_needed(
+        'vendor.qti.hardware.display.config-V2-ndk_platform.so',
+        'vendor.qti.hardware.display.config-V2-ndk.so',
+    ),
+    (
+        'vendor/lib64/libTrueSight.so',
+        'vendor/lib64/libalLDC.so',
+        'vendor/lib64/libalhLDC.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm8450-common',
+    'marble',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
     check_elf=True,
+    add_firmware_proprietary_file=True,
 )
 
 if __name__ == '__main__':
